@@ -1,18 +1,53 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="banner">
+    <p class="h1 display-1 head">Welcome!</p>
+    <p class="lead">
+      To Yassin Altaha's portfolio created using Vue js and Bootstrap
+    </p>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+  name: "Home",
+  props: {},
+};
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+.banner {
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  p {
+    color: white;
+    padding: 10px;
   }
 }
-</script>
+
+//Smaller screens
+@media only screen and (max-width: 1010px) {
+  .banner {
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    flex-direction: auto;
+    justify-content: auto;
+    align-items: center;
+    margin-bottom: 32px;
+    p {
+      color: white;
+      padding: 10px;
+    }
+
+    .head {
+      font-size: 3.6rem;
+    }
+  }
+}
+</style>

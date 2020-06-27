@@ -28,9 +28,9 @@
         </router-link>
       </li>
       <li class="myNav-item">
-        <router-link class="myNav-link" to="/projects">
+        <router-link class="myNav-link" to="/capstone-project">
           <b-icon icon="receipt-cutoff" class="exo-icon"></b-icon>
-          <div class="link-text">Projects</div>
+          <div class="link-text">Capstone</div>
         </router-link>
       </li>
       <!-- <li class="myNav-item">

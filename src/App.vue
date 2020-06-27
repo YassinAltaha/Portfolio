@@ -10,7 +10,7 @@
       <b-row>
         <b-col>
           <router-view
-            class="view-container animate__animated animate__fadeIn"
+            class="view-container animate__animated animate__fadeInLeft animate__fast"
           />
         </b-col>
       </b-row>
@@ -64,7 +64,7 @@ export default {
   }
 }
 .view-container {
-  min-height: 85vh;
+  min-height: 88vh;
   max-height: auto;
   color: #ffe8f8;
   backdrop-filter: blur(5px);

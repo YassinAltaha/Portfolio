@@ -2,7 +2,8 @@
   <div class="banner">
     <p class="h1 display-1 head">Welcome!</p>
     <p class="lead">
-      To Yassin Altaha's portfolio created using Vue js and Bootstrap
+      To Yassin Altaha's portfolio created using Vue js and Bootstrap <br />
+      and hosted on Netlify
     </p>
   </div>
 </template>

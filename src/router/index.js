@@ -36,7 +36,7 @@ const routes = [
     },
   },
   {
-    path: "/Projects",
+    path: "/capstone-project",
     name: "Projects",
     component: Projects,
     // component: Projects,

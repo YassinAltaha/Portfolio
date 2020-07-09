@@ -12,9 +12,9 @@
         </router-link>
       </li>
       <li class="myNav-item">
-        <router-link class="myNav-link" to="/about">
+        <router-link class="myNav-link" to="/Profile">
           <b-icon icon="person-circle" class="exo-icon"></b-icon>
-          <div class="link-text">About</div>
+          <div class="link-text">Profile</div>
         </router-link>
       </li>
       <li class="myNav-item">

@@ -8,10 +8,11 @@
       <div class="col-md-7 card-body-extra">
         <div class="card-body card-body-extra">
           <h5 class="card-title display-1">Yassin AlTaha</h5>
+          <h5>Software Developer / Web designer.</h5>
+
           <p class="card-text">
-            New graduate of the Systems Analyst Advanced Diploma from Sheridan
-            College. Proficient in Java, Spring Boot frameworks, Bootstrap and
-            Vue.js.
+            Computers and art have always facinated me, desiging and developing software incompase both of those aspectes perfectly.
+            i am hoping to keep learning and creating new things as i move forward in the journy as a developer.
           </p>
           <div class="links rounded">
             <a href="https://www.linkedin.com/in/yassin-altaha/">

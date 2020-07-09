@@ -2,24 +2,22 @@
   <footer>
     <div class="main-content">
       <div class="left box">
-        <h2>About Us</h2>
+        <h2>About Me</h2>
         <div class="content">
-          Bluejandslkfjnalkjsdnflakn lajsndflansdljkfn alkjdsnf lkjansdjlkf naklsndf kjlansdk nflajn lkjansdjlkf
+          New graduate of the Systems Analyst Advanced Diploma from Sheridan
+          College. Proficient in Java, Spring Boot frameworks, Bootstrap and
+          Vue.js.
           <div class="social">
-            <a href="https://www.instagram.com/exospheric3/?hl=en">
-              <span>
-                <img src="../assets/instagram-icon.png" alt="Insta-logo" class="link-img" />
-              </span>
+            <a href="mailto: yassin.altaha@gmail.com">
+              <img src="../assets/gmail-icon.png" alt="LinkedIn-logo" class="link-img" />
             </a>
             <a href="https://www.instagram.com/exospheric3/?hl=en">
               <span>
                 <img src="../assets/instagram-icon.png" alt="Insta-logo" class="link-img" />
               </span>
             </a>
-            <a href="https://www.instagram.com/exospheric3/?hl=en">
-              <span>
-                <img src="../assets/instagram-icon.png" alt="Insta-logo" class="link-img" />
-              </span>
+            <a href="https://www.linkedin.com/in/yassin-altaha/">
+              <img src="../assets/linkedin-icon.png" alt="LinkedIn-logo" class="link-img" />
             </a>
           </div>
         </div>
@@ -33,9 +31,9 @@
             </span>
             <span class="text">+1 (647)962-6206</span>
           </div>
-          <div class="Phone">
+          <div class="email">
             <span>
-              <h3>Phone</h3>
+              <h3>Email</h3>
             </span>
             <span class="email">Yassin.Altaha@gmail.com</span>
           </div>
@@ -53,14 +51,14 @@
           <form action="#">
             <div class="email">
               <div class="text">Email *</div>
-              <input type="email" required />
+              <input type="email" style="color:black;" required />
             </div>
             <div class="msg">
               <div class="text">Message *</div>
-              <textarea required cols="25" rows="2"></textarea>
+              <textarea class="msg" required cols="25" rows="2" disabled> Just for show</textarea>
             </div>
             <div class="btn">
-              <button type="submit">Send</button>
+              <button type="submit " class="btn btn-dark" disabled>Send</button>
             </div>
           </form>
         </div>
@@ -81,6 +79,9 @@ export default {};
   }
 }
 ////////----------------------------------------------------------------------------------------\\\\\\\\\\\\\\\
+.msg {
+  color: black;
+}
 .link-img {
   max-height: 45px;
   max-width: 45px;
@@ -105,6 +106,13 @@ footer {
   .box {
     flex-basis: 50%;
     padding: 10px 20px;
+  }
+  .center {
+    .content {
+      h3 {
+        margin-top: 10px;
+      }
+    }
   }
 }
 .box {

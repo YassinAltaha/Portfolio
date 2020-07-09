@@ -55,8 +55,8 @@
     margin-bottom: 10vh;
   }
   .card-img {
-    max-width: 60%;
-    max-height: 70%;
+    max-width: 70%;
+    max-height: 90%;
   }
 }
 </style>

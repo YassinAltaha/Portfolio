@@ -37,11 +37,11 @@ const routes = [
   },
   {
     path: "/capstone-project",
-    name: "Projects",
+    name: "Project",
     component: Projects,
     // component: Projects,
     meta: {
-      title: "Projects",
+      title: "Project",
     },
   },
 ];

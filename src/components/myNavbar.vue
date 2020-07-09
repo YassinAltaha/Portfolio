@@ -2,11 +2,7 @@
   <div class="myNav">
     <ul class="myNav-ul">
       <li class="myNav-logo">
-        <b-icon
-          icon="caret-right-fill"
-          class="h1 logo-img"
-          style="color: #7952b3;"
-        ></b-icon>
+        <b-icon icon="caret-right-fill" class="h1 logo-img" style="color: #7952b3;"></b-icon>
       </li>
 
       <li class="myNav-item">
@@ -30,7 +26,7 @@
       <li class="myNav-item">
         <router-link class="myNav-link" to="/capstone-project">
           <b-icon icon="receipt-cutoff" class="exo-icon"></b-icon>
-          <div class="link-text">Capstone</div>
+          <div class="link-text">Project</div>
         </router-link>
       </li>
       <!-- <li class="myNav-item">
@@ -38,7 +34,7 @@
           <b-icon icon="emoji-sunglasses" class="exo-icon"></b-icon>
           <div class="link-text">Forms</div>
         </router-link>
-      </li> -->
+      </li>-->
     </ul>
   </div>
 </template>

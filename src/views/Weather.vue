@@ -1,6 +1,12 @@
 <template>
   <div v-if="gettingLocation">
-    <img src="../assets/loading-rainbow.gif" class="loadingImage" />
+    <b-spinner
+      style="width: 10rem; height: 10rem;"
+      label="Large Spinner"
+      varint="Dark"
+      class="loadingImage"
+    ></b-spinner>
+
     <div v-if="errorStr">{{ errorStr }}</div>
   </div>
   <div class="main" v-else>
@@ -143,8 +149,6 @@ export default {
             "&appid=4ba6ecad9f13b3eba2c1a375d3bc2b3b"
         )
         .then((response) => {
-          console.log(response.data);
-
           this.visibility = response.data.visibility;
           this.country = response.data.sys.country;
           this.condition = response.data.weather[0];
@@ -197,8 +201,8 @@ export default {
   display: contain;
   max-width: 250px;
   margin-top: 10%;
+  margin-bottom: 25px;
   align-self: center;
-  filter: blur(1px);
 }
 /* Component css */
 .main {
@@ -249,6 +253,11 @@ export default {
       "bot-info";
     background-repeat: no-repeat;
     margin-bottom: 25vh;
+  }
+  .img {
+    align-self: center;
+    width: 75px;
+    height: 75px;
   }
 }
 </style>

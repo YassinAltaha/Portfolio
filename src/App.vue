@@ -1,34 +1,29 @@
 <template>
   <div id="app">
     <navBar />
-    <b-container fluid>
-      <b-row class="exoheader">
-        <b-col>
-          <p class="display-4 h1 ">{{ pageTitle }}</p>
-        </b-col>
-      </b-row>
-      <b-row>
-        <b-col>
-          <router-view
-            class="view-container animate__animated animate__fadeInLeft animate__fast"
-          />
-        </b-col>
-      </b-row>
-    </b-container>
+    <div class="grid">
+      <div class="exoheader">
+        <p class="display-4 h1">{{ pageTitle }}</p>
+      </div>
+      <router-view class="view-container animate__animated animate__fadeInLeft animate__fast" />
+
+      <myFooter class="myFooter" />
+    </div>
   </div>
 </template>
 <script>
 import navBar from "@/components/myNavbar.vue";
-
+import myFooter from "@/components/Footer.vue";
 export default {
   name: "app",
   data() {
     return {
-      pageTitle: "",
+      pageTitle: ""
     };
   },
   components: {
     navBar,
+    myFooter
   },
   watch: {
     $route: {
@@ -36,9 +31,9 @@ export default {
       handler(to) {
         document.title = to.meta.title || "Some Default Title";
         this.pageTitle = to.meta.title;
-      },
-    },
-  },
+      }
+    }
+  }
 };
 </script>
 <style lang="scss">
@@ -46,24 +41,32 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   text-align: center;
   color: #2c3e50;
   background-image: url("./assets/background-darkwood.jpg");
-  height: auto;
-  min-height: 100vh;
-}
-.exoheader {
-  overflow: hidden;
-  background-size: cover;
   display: flex;
   flex-direction: column;
+}
+
+.exoheader {
+  grid-area: topHeader;
   p {
-    margin-left: 12vh;
+    margin-left: 9vw;
     float: left;
     color: white;
   }
 }
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "topHeader"
+    "main"
+    "footer";
+}
 .view-container {
+  grid-area: main;
   min-height: 88vh;
   max-height: auto;
   color: #ffe8f8;
@@ -72,19 +75,24 @@ export default {
   border-radius: 1%;
   padding-top: 10px;
   padding-bottom: 10px;
-  overflow: scroll;
+}
+.myFooter {
+  grid-area: footer;
 }
 
 //larger screens (WEBSITE)
 @media only screen and (min-width: 1010px) {
   .view-container {
-    margin-left: 90px;
+    margin-left: 9vw;
   }
 }
 
 //Smaller screens (MOBILE)
 @media only screen and (max-width: 1010px) {
   .exoheader {
+    display: none;
+  }
+  .myFooter {
     display: none;
   }
   .view-container {

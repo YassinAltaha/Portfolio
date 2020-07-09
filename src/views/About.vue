@@ -1,80 +1,43 @@
-<template>
-  <div class="banner">
-    <b-container>
-      <div class="row">
-        <div cols="5" class="img-col col-sm-10 col-xs-12 col-md-6">
-          <img rounded src="../assets/profile.jpg" class="profile" />
-        </div>
-        <div cols="7" class="text-col col-sm-10 col-xs-12 col-md-6">
-          <p class="h1 display-2 head">Yassin Altaha</p>
-          <p class="lead">
+
+  <template>
+  <div class="card mb-3 bg-transparent" style="max-width: auto;">
+    <div class="row no-gutters mobile-sass">
+      <div class="col-md-5">
+        <img src="../assets/profile.jpg" class="card-img" alt="Profile Picture" />
+      </div>
+      <div class="col-md-7 card-body-extra">
+        <div class="card-body card-body-extra">
+          <h5 class="card-title display-1">Yassin AlTaha</h5>
+          <p class="card-text">
             New graduate of the Systems Analyst Advanced Diploma from Sheridan
             College. Proficient in Java, Spring Boot frameworks, Bootstrap and
             Vue.js.
-            <br />
-            Awarded 2nd place in the 2019 Sheridan College capstone competition.
           </p>
-          <div class="links">
+          <div class="links rounded">
             <a href="https://www.linkedin.com/in/yassin-altaha/">
-              <img
-                src="../assets/linkedin-icon.png"
-                alt="LinkedIn-logo"
-                class="link-img"
-              />
+              <img src="../assets/linkedin-icon.png" alt="LinkedIn-logo" class="link-img" />
             </a>
             <a href="mailto: yassin.altaha@gmail.com">
-              <img
-                src="../assets/gmail-icon.png"
-                alt="LinkedIn-logo"
-                class="link-img"
-              />
+              <img src="../assets/gmail-icon.png" alt="LinkedIn-logo" class="link-img" />
             </a>
             <a href="https://www.instagram.com/exospheric3/?hl=en">
-              <img
-                src="../assets/instagram-icon.png"
-                alt="Insta-logo"
-                class="link-img"
-              />
+              <img src="../assets/instagram-icon.png" alt="Insta-logo" class="link-img" />
             </a>
           </div>
         </div>
       </div>
-    </b-container>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.lead {
-  text-align: left;
-}
-.profile {
-  height: auto;
-  width: auto;
-  max-width: 560px;
-  max-height: 620px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  border-radius: 1%;
+.card-body-extra {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
 }
 
-.banner {
-  overflow: hidden;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 32px;
-  p {
-    color: white;
-    padding: 10px;
-  }
-}
-.text-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .link-img {
   max-height: 45px;
   max-width: 45px;
@@ -83,24 +46,16 @@
 
 //Smaller screens (MOBILE)
 @media only screen and (max-width: 1010px) {
-  .banner {
-    // margin-top: 1vh;
-    // margin-bottom: 13vh;
-    margin: 0;
-    height: 100vh;
-    margin-bottom: 25vh;
+  .card-title {
+    font-size: 3.6rem;
+  }
+  .mobile-sass {
     overflow: scroll;
+    margin-bottom: 10vh;
   }
-  .lead {
-    text-align: center;
-  }
-  .head {
-    font-size: 2.6rem;
-  }
-  .profile {
-    max-width: 360px;
-    max-height: 220px;
-    overflow: visible;
+  .card-img {
+    max-width: 60%;
+    max-height: 70%;
   }
 }
 </style>

@@ -3,7 +3,7 @@
   <div class="card mb-3 bg-transparent" style="max-width: auto;">
     <div class="row no-gutters mobile-sass">
       <div class="col-md-5">
-        <img src="../assets/profile.jpg" class="card-img" alt="Profile Picture" />
+        <img src="../assets/profile.jpeg" class="card-img" alt="Profile Picture" />
       </div>
       <div class="col-md-7 card-body-extra">
         <div class="card-body card-body-extra">

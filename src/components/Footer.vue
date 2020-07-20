@@ -4,7 +4,7 @@
       <div class="left box">
         <h2>About Me</h2>
         <div class="content">
-          New graduate of the Systems Analyst Advanced Diploma from Sheridan
+          New graduate of the Systems Analyst Advanced Degree from Sheridan
           College. Proficient in Java, Spring Boot frameworks, Bootstrap and
           Vue.js.
           <div class="social">

@@ -19,6 +19,13 @@
             <a href="https://www.linkedin.com/in/yassin-altaha/">
               <img src="../assets/linkedin-icon.png" alt="LinkedIn-logo" class="link-img" />
             </a>
+            <a href="https://github.com/exospher3">
+              <img
+                src="../assets/github-logo.svg"
+                alt="gitHub-logo"
+                class="link-img bg-white rounded"
+              />
+            </a>
           </div>
         </div>
       </div>
@@ -75,7 +82,7 @@ export default {};
 /*Large Screens*/
 @media only screen and (min-width: 1010px) {
   footer {
-    padding-left: 5vw;
+    padding-left: 7vw;
   }
 }
 ////////----------------------------------------------------------------------------------------\\\\\\\\\\\\\\\

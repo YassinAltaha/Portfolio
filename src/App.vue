@@ -2,7 +2,7 @@
   <div id="app">
     <navBar />
     <div class="grid">
-      <div class="exoheader">
+      <div class="page-header">
         <p class="display-4 h1">{{ pageTitle }}</p>
       </div>
       <router-view class="view-container animate__animated animate__fadeInLeft animate__fast" />
@@ -29,7 +29,7 @@ export default {
     $route: {
       immediate: true,
       handler(to) {
-        document.title = to.meta.title || "Some Default Title";
+        document.title = to.meta.title || "Yassin Portfolio";
         this.pageTitle = to.meta.title;
       }
     }
@@ -49,7 +49,7 @@ export default {
   flex-direction: column;
 }
 
-.exoheader {
+.page-header {
   grid-area: topHeader;
   p {
     margin-left: 9vw;
@@ -89,7 +89,7 @@ export default {
 
 //Smaller screens (MOBILE)
 @media only screen and (max-width: 1010px) {
-  .exoheader {
+  .page-header {
     display: none;
   }
   .myFooter {

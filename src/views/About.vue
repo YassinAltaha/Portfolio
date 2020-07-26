@@ -24,6 +24,9 @@
             <a href="https://www.instagram.com/exospheric3/?hl=en">
               <img src="../assets/instagram-icon.png" alt="Insta-logo" class="link-img" />
             </a>
+            <a href="https://github.com/exospher3">
+              <img src="../assets/github-logo.svg" alt="gitHub-logo" class="link-img" />
+            </a>
           </div>
         </div>
       </div>

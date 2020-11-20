@@ -1,27 +1,42 @@
 <template>
   <div id="app">
-    <navBar />
-    <div class="grid">
-      <div class="page-header">
-        <p class="display-4 h1">{{ pageTitle }}</p>
+     <navBar />
+    <myBackgroud>
+    </myBackgroud>
+    <div class="container-fluid "  >
+       
+      <div class="row">
+        <myHeader :pageTitle="pageTitle"> </myHeader>
       </div>
-      <router-view class="view-container animate__animated animate__fadeInLeft animate__fast" />
-
-      <myFooter class="myFooter" />
+      <div class="row justify-content-center">
+        
+        <router-view class="view-container animate__animated animate__fadeInLeft animate__fast" />
+      </div>
+    
+      <div class="row justify-content-center background-c text-light">
+        <myFooter class="myFooter" />
+      </div>
+     
     </div>
+    
   </div>
 </template>
 <script>
 import navBar from "@/components/myNavbar.vue";
 import myFooter from "@/components/Footer.vue";
+import myHeader from "@/components/myHeader.vue";
+import myBackgroud from "@/components/bg.vue";
 export default {
   name: "app",
-  data() {
-    return {
-      pageTitle: ""
-    };
+  data(){
+    return{
+      pageTitle: "",
+ 
+    }
   },
   components: {
+    myHeader,
+    myBackgroud,
     navBar,
     myFooter
   },
@@ -31,77 +46,64 @@ export default {
       handler(to) {
         document.title = to.meta.title || "Yassin Portfolio";
         this.pageTitle = to.meta.title;
-      }
-    }
-  }
+    
+      },
+    },
+  },
 };
 </script>
 <style lang="scss">
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   text-align: center;
-  color: #2c3e50;
-  background-image: url("./assets/background-darkwood.jpg");
-  display: flex;
-  flex-direction: column;
+  background: transparent;
+  
 }
 
-.page-header {
-  grid-area: topHeader;
-  p {
-    margin-left: 9vw;
-    float: left;
-    color: white;
-  }
-}
 
-.grid {
-  display: grid;
-  grid-template-areas:
-    "topHeader"
-    "main"
-    "footer";
-}
-.view-container {
-  grid-area: main;
-  min-height: 88vh;
-  max-height: auto;
-  color: #ffe8f8;
+.background-c{
   backdrop-filter: blur(5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-  border-radius: 1%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  background:linear-gradient(-45deg, rgb(76,0,255), transparent),
+             repeating-linear-gradient(45deg, rgb(0, 47, 71) 0%, rgb(7, 47, 71) 5%, transparent 5%, transparent 10%),
+             rgb(118, 64, 139) repeating-linear-gradient(-45deg , rgba(7,47,71, 0.5) 0%, rgba(183,0,255,0.5) 5%, transparent 5%, transparent 10%);
 }
-.myFooter {
-  grid-area: footer;
+
+.view-container {
+  padding: 2rem;
+  backdrop-filter: blur(50px);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  overflow: hidden;
 }
 
 //larger screens (WEBSITE)
 @media only screen and (min-width: 1010px) {
   .view-container {
-    margin-left: 9vw;
+    min-width: 85%;
+    max-width: 85%;
+    min-height: 100vh;
+    margin-left: 3vw;
+    margin-bottom: 3rem;
+    
   }
 }
 
 //Smaller screens (MOBILE)
 @media only screen and (max-width: 1010px) {
-  .page-header {
-    display: none;
-  }
-  .myFooter {
-    display: none;
+  
+  .myFooter{
+  margin-left: 0;
   }
   .view-container {
-    // margin-top: 1vh;
-    // margin-bottom: 13vh;
-    margin: 0;
-    height: 100vh;
     padding-bottom: 0;
-    height: auto;
+    min-width: 450px;
+    max-width: 100%;
+    min-height: 100vh;
+    margin-bottom: 1rem;
   }
 }
 </style>

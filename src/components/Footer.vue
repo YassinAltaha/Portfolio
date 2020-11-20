@@ -1,155 +1,149 @@
 <template >
-  <footer>
-    <div class="main-content">
-      <div class="left box">
-        <h2>About Me</h2>
-        <div class="content">
-          New graduate of the Systems Analyst Advanced Degree from Sheridan
-          College. Proficient in Java, Spring Boot frameworks, Bootstrap and
-          Vue.js.
-          <div class="social">
-            <a href="mailto: yassin.altaha@gmail.com">
-              <img src="../assets/gmail-icon.png" alt="LinkedIn-logo" class="link-img" />
+  <footer class="footer font-small text-light">
+      <div class="container">
+        <!-- Grid row-->
+        <div class="row d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-6 text-center text-md-right text-white">
+            <!-- Facebook -->
+            <!-- <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"></i>
             </a>
-            <a href="https://www.instagram.com/exospheric3/?hl=en">
-              <span>
-                <img src="../assets/instagram-icon.png" alt="Insta-logo" class="link-img" />
-              </span>
+            -->
+
+            <!-- Google +-->
+            <a class="gplus-ic" href="mailto: yassin.altaha@gmail.com">
+              <i class="fab fa-google-plus-g white-text mr-4"></i>
             </a>
-            <a href="https://www.linkedin.com/in/yassin-altaha/">
-              <img src="../assets/linkedin-icon.png" alt="LinkedIn-logo" class="link-img" />
+            <!--Linkedin -->
+            <a class="li-ic" href="https://www.linkedin.com/in/yassin-altaha/">
+              <i class="fab fa-linkedin-in white-text mr-4"></i>
             </a>
-            <a href="https://github.com/exospher3">
-              <img
-                src="../assets/github-logo.svg"
-                alt="gitHub-logo"
-                class="link-img bg-white rounded"
-              />
+            <!--Instagram-->
+            <a
+              class="ins-ic"
+              href="https://www.instagram.com/exospheric3/?hl=en"
+            >
+              <i class="fab fa-instagram mr-4"></i>
+            </a>
+            <!-- Github-->
+            <a class="git-ic" href="https://github.com/exospher3">
+              <i class="fab fa-github "></i>
             </a>
           </div>
+          <!-- Grid column -->
         </div>
-      </div>
-      <div class="center box">
-        <h2>Address</h2>
-        <div class="content">
-          <div class="phone">
-            <span>
-              <h3>Phone</h3>
-            </span>
-            <span class="text">+1 (647)962-6206</span>
-          </div>
-          <div class="email">
-            <span>
-              <h3>Email</h3>
-            </span>
-            <span class="email">Yassin.Altaha@gmail.com</span>
-          </div>
-          <div class="place">
-            <span>
-              <h3>Location</h3>
-            </span>
-            <span class="text">Ontario, Canada</span>
-          </div>
-        </div>
-      </div>
-      <div class="right box">
-        <h2>Contact Us</h2>
-        <div class="content">
-          <form action="#">
-            <div class="email">
-              <div class="text">Email *</div>
-              <input type="email" style="color:black;" required />
-            </div>
-            <div class="msg">
-              <div class="text">Message *</div>
-              <textarea class="msg" required cols="25" rows="2" disabled> Just for show</textarea>
-            </div>
-            <div class="btn">
-              <button type="submit " class="btn btn-dark" disabled>Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
+        <!-- Grid row-->
+      
     </div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Web Deisgner Joke</h6>
+          <hr
+            class="text-light accent-2 mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px;"
+          />
+          <p>
+            A web designer walks into a bar, but immediately leaves in disgust
+            upon noticing the tables layout.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Skills</h6>
+          <hr
+            class="text-light accent-2 mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px;"
+          />
+          <p>
+            Java Spring
+          </p>
+          <p>
+            JavaScript Node
+          </p>
+          <p>
+            jQuery
+          </p>
+          <p>
+            Full-stack
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Hobbies</h6>
+          <hr
+            class="text-light accent-2 mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px;"
+          />
+          <p>
+            Hiking
+          </p>
+          <p>
+            Basketball
+          </p>
+          <p>
+            Drawing
+          </p>
+          <p>
+            Photography
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr
+            class="text-light accent-2 mb-4 mt-0 d-inline-block mx-auto"
+            style="width: 60px;"
+          />
+          <p><i class="fas fa-home mr-3"></i> Mississauga Ontario, CA</p>
+          <p><i class="fas fa-envelope mr-3"></i> Yassin.Altaha@gmail.com</p>
+          <p><i class="fas fa-phone mr-3"></i> +1 647 962 6206</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 mobile-margin">© 2020 Copyright:</div>
+    <!-- Copyright -->
   </footer>
+<!-- Footer -->
 </template>
-
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      year: new Date().getFullYear()
+    };
+  }
+};
 </script>
-
 <style lang="scss" scoped>
-/*Large Screens*/
-@media only screen and (min-width: 1010px) {
-  footer {
-    padding-left: 7vw;
-  }
-}
-////////----------------------------------------------------------------------------------------\\\\\\\\\\\\\\\
-.msg {
-  color: black;
-}
-.link-img {
-  max-height: 45px;
-  max-width: 45px;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  color: white;
+.footer{
+  position: sticky;
 }
-footer {
-  position: relative;
-  bottom: 0px;
-  width: 100%;
-  background: #111;
-}
-
-.main-content {
-  display: flex;
-  .box {
-    flex-basis: 50%;
-    padding: 10px 20px;
-  }
-  .center {
-    .content {
-      h3 {
-        margin-top: 10px;
-      }
-    }
-  }
-}
-.box {
-  h2 {
-    font-size: 1.125rem;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  h3 {
-    font-size: 1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-  .content {
-    margin: 20px 0 0 0;
-  }
-}
-
-.left {
-  .content {
-    p {
-      text-align: justify;
-    }
-    .social {
-      margin: 20px 0 0 0;
-
-      a {
-        padding: 0 2px;
-      }
-    }
+@media only screen and (max-width: 1010px) {
+  .mobile-margin{
+    margin-bottom: 5rem;
   }
 }
 </style>

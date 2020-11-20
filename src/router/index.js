@@ -16,8 +16,8 @@ const routes = [
     },
   },
   {
-    path: "/Profile",
-    name: "Profile",
+    path: "/profile",
+    name: "profile",
     meta: {
       title: "Profile",
     },
@@ -37,7 +37,7 @@ const routes = [
   },
   {
     path: "/capstone-project",
-    name: "Project",
+    name: "project",
     component: Projects,
     // component: Projects,
     meta: {

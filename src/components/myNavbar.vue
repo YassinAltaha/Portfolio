@@ -12,7 +12,7 @@
         </router-link>
       </li>
       <li class="myNav-item">
-        <router-link class="myNav-link" to="/Profile">
+        <router-link class="myNav-link" to="/profile">
           <b-icon icon="person-circle" class="exo-icon"></b-icon>
           <div class="link-text">Profile</div>
         </router-link>
@@ -29,12 +29,6 @@
           <div class="link-text">Project</div>
         </router-link>
       </li>
-      <!-- <li class="myNav-item">
-        <router-link class="myNav-link" to="/forms">
-          <b-icon icon="emoji-sunglasses" class="exo-icon"></b-icon>
-          <div class="link-text">Forms</div>
-        </router-link>
-      </li>-->
     </ul>
   </div>
 </template>
@@ -54,7 +48,7 @@ $secondary-color: rgb(69, 0, 116);
   height: 100vh;
   position: fixed;
   background-color: black;
-  transition: width 175ms;
+  transition: width 150ms;
   z-index: 1;
 }
 
@@ -103,19 +97,31 @@ $secondary-color: rgb(69, 0, 116);
   .myNav-logo {
     display: block;
     margin: 15px;
+    transform: translateY(15px);
+  }
+  .myNav-logo:hover {
+      .logo-img:hover{
+      transform: rotate(450deg);
+      transition-duration: 3000ms;
+      }
   }
   .myNav {
     top: 0;
     width: 6rem;
     height: 100vh;
   }
-
+  .myNav-item:hover{
+    .link-text, .exo-icon{
+      transform: translateX(10px);
+    }    
+  }
   .myNav:hover {
-    width: 16rem;
+    width: 18rem;
 
     .link-text {
       display: inline;
       transition: opacity var(600ms);
+      
     }
     .logo-img {
       transform: rotate(90deg);
@@ -129,6 +135,7 @@ $secondary-color: rgb(69, 0, 116);
   .myNav-logo {
     display: none;
   }
+
   .myNav {
     bottom: 0;
     width: 100vw;

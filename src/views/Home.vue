@@ -1,58 +1,71 @@
+<template>
+<div>
+  <b-container fluid="lg" >
+    <b-row class="">
+    <b-col cols="12" md="4" sm="12" class="mobile-view">
+      <HomeCard class="introCard"/>
+    </b-col>
+    <b-col cols="12" md="8" sm="12" class="mobile-view"> <RadarChart class="mb-5 radarCard"/> </b-col>
+  </b-row>
+  
+ <b-row class="mt-5">
+    <b-col> <SkillChart class="barCard mt-5"/></b-col>
+  </b-row>
+   
 
-  <template>
-  <div class="banner bg-transparent" style="max-width: auto;">
-    <div class="row no-gutters">
-      <div class="col-md">
-        <h5 class="display-1 head">Welcome!</h5>
-        <p class="display-5">
-          To Yassin Altaha's responsive portfolio created using Vue js and Bootstrap
-          <br />and hosted on Netlify
-        </p>
-      </div>
-    </div>
-  </div>
+
+</b-container>
+</div>  
 </template>
-
-  <!-- <div class="banner">
-    <p class="h1 display-1 head">Welcome!</p>
-    <p class="lead">
-      To Yassin Altaha's portfolio created using Vue js and Bootstrap
-      <br />and hosted on Netlify
-    </p>
-  </div>-->
-
 <script>
+import SkillChart from "@/components/SkillChart.vue";
+import RadarChart from "@/components/PersonalSkill.vue"
+import HomeCard from "@/components/WelcomeCard.vue"
 export default {
   name: "Home",
-  props: {}
+  data(){
+    return{
+    }
+  },
+  components: {
+      SkillChart,
+      RadarChart,
+      HomeCard
+
+  }
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-.banner {
-  overflow: hidden;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 32px;
-  p {
-    color: white;
-    padding: 10px;
+<style lang="scss" scoped>
+/* Container holding the image and the text */
+.introCard:hover{
+    transform: scale(1.10);
+}
+.radarCard{
+  float: right;
+  text-align: left;
+}
+.barCard{
+  text-align: left;
+}
+.radarCard:hover{
+  transform: scale(1.10);
+}
+.barCard:hover{
+  transform: scale(1.05);
+}
+//Smaller screens (MOBILE)
+@media only screen and (max-width: 750px) {
+  .radarCard{
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+  .barCard{
+    text-align: center;
+  }
+  .mobile-view{
+    margin-bottom: 1.5rem ;
   }
 }
 
-//Smaller screens
-@media only screen and (max-width: 1010px) {
-  .banner {
-    flex-direction: auto;
-    justify-content: auto;
-
-    .head {
-      font-size: 3.6rem;
-    }
-  }
-}
 </style>

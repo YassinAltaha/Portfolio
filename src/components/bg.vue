@@ -1,8 +1,6 @@
 <template>
     <div class="myBg">
         <div class="bk-container">
-            <div class="bk-head">
-            </div> 
             <div class="bk-body">
             </div>
         </div>
@@ -18,17 +16,22 @@ export default {
 
 <style lang="scss" scoped>
 .myBg{
-    overflow:scroll;
-    background-color: rgb(7, 47, 71) ;
-    position:absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    min-height: 170vh;
-    height: 170vh;
-    width: 100vw;
+    overflow:hidden;
+    
+   background-size: cover;
+  height: auto;
+  width: 100vw;
+  
+  position:absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+    
     min-width: 100vw;
     background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(7, 47, 71) ;
     
 @mixin dots($count) {
   $text-shadow: ();

@@ -1,11 +1,12 @@
 <template>
   <div id="app">
      <navBar />
-    <myBackgroud>
-    </myBackgroud>
+   
     <div class="container-fluid "  >
-       
+        <myBackgroud>
+       </myBackgroud>
       <div class="row">
+      
         <myHeader :pageTitle="pageTitle"> </myHeader>
       </div>
       <div class="row justify-content-center">
@@ -59,8 +60,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background: transparent;
-  
+  min-width: 100vw;
+  overflow: hidden;
+  background-color: rgb(7, 47, 71) ;
 }
 
 
@@ -78,6 +80,7 @@ export default {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   border-radius: 5%;
   overflow: hidden;
+
 }
 
 //larger screens (WEBSITE)
@@ -85,13 +88,17 @@ export default {
   .view-container {
     min-width: 85%;
     max-width: 85%;
-    min-height: 100vh;
+    min-height: 85vh;
     margin-left: 3vw;
-    margin-bottom: 3rem;
-    
+
   }
 }
-
+.background-c{
+  margin-top: 1rem ;
+  position: sticky;
+  left: 0;
+  bottom: -100vh;
+}
 //Smaller screens (MOBILE)
 @media only screen and (max-width: 1010px) {
   
@@ -102,7 +109,6 @@ export default {
     padding-bottom: 0;
     min-width: 450px;
     max-width: 100%;
-    min-height: 100vh;
     margin-bottom: 1rem;
   }
 }

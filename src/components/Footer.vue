@@ -1,5 +1,5 @@
 <template >
-  <footer class="footer font-small text-light">
+  <footer class="footer font-small text-light" id="sticky-footer">
       <div class="container">
         <!-- Grid row-->
         <div class="row d-flex align-items-center">
@@ -138,8 +138,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-.footer{
-  position: sticky;
+#sticky-footer{
+  
 }
 @media only screen and (max-width: 1010px) {
   .mobile-margin{

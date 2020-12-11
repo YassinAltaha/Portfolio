@@ -2,7 +2,11 @@
   <div class="myNav">
     <ul class="myNav-ul">
       <li class="myNav-logo">
-        <b-icon icon="caret-right-fill" class="h1 logo-img" style="color: #7952b3;"></b-icon>
+        <b-icon
+          icon="caret-right-fill"
+          class="h1 logo-img"
+          style="color: #7952b3;"
+        ></b-icon>
       </li>
 
       <li class="myNav-item">
@@ -49,7 +53,7 @@ $secondary-color: rgb(69, 0, 116);
   position: fixed;
   background-color: black;
   transition: width 150ms;
-  z-index: 1;
+  z-index: 2;
 }
 
 .myNav-ul {
@@ -100,20 +104,21 @@ $secondary-color: rgb(69, 0, 116);
     transform: translateY(15px);
   }
   .myNav-logo:hover {
-      .logo-img:hover{
+    .logo-img:hover {
       transform: rotate(450deg);
       transition-duration: 3000ms;
-      }
+    }
   }
   .myNav {
     top: 0;
     width: 6rem;
     height: 100vh;
   }
-  .myNav-item:hover{
-    .link-text, .exo-icon{
+  .myNav-item:hover {
+    .link-text,
+    .exo-icon {
       transform: translateX(10px);
-    }    
+    }
   }
   .myNav:hover {
     width: 18rem;
@@ -121,7 +126,6 @@ $secondary-color: rgb(69, 0, 116);
     .link-text {
       display: inline;
       transition: opacity var(600ms);
-      
     }
     .logo-img {
       transform: rotate(90deg);
@@ -140,7 +144,7 @@ $secondary-color: rgb(69, 0, 116);
     bottom: 0;
     width: 100vw;
     height: 6rem;
-    z-index: 1;
+    z-index: 2;
   }
   .myNav-ul {
     flex-direction: row;

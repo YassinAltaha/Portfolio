@@ -1,8 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
-import Weather from "../views/Weather.vue";
-import Projects from "../views/Projects.vue";
+import Home from "../views/Home.vue"
 
 Vue.use(VueRouter);
 
@@ -14,6 +12,7 @@ const routes = [
     meta: {
       title: "Home",
     },
+    
   },
   {
     path: "/profile",
@@ -30,19 +29,22 @@ const routes = [
   {
     path: "/weather",
     name: "Weather",
-    component: Weather,
     meta: {
       title: "Weather App",
     },
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Weather.vue"),
+    
   },
   {
     path: "/capstone-project",
     name: "project",
-    component: Projects,
-    // component: Projects,
     meta: {
       title: "Project",
     },
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/Projects.vue"),
+    
   },
 ];
 

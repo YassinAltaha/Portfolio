@@ -138,9 +138,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 
-#sticky-footer{
-  
-}
 @media only screen and (max-width: 1010px) {
   .mobile-margin{
     margin-bottom: 5rem;

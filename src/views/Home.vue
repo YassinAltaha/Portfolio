@@ -1,71 +1,64 @@
 <template>
-<div>
-  <b-container fluid="lg" >
-    <b-row class="">
-    <b-col cols="12" md="4" sm="12" class="mobile-view">
-      <HomeCard class="introCard"/>
-    </b-col>
-    <b-col cols="12" md="8" sm="12" class="mobile-view"> <RadarChart class="mb-5 radarCard"/> </b-col>
-  </b-row>
-  
- <b-row class="mt-5">
-    <b-col> <SkillChart class="barCard mt-5"/></b-col>
-  </b-row>
-   
+  <div>
+    <b-container fluid="lg">
+      <b-row class="">
+        <b-col cols="12" md="4" sm="12" class="mobile-view">
+          <home-card class="introCard" />
+        </b-col>
+        <b-col cols="12" md="8" sm="12" class="mobile-view">
+          <radar-chart class="mb-5 radarCard" />
+        </b-col>
+      </b-row>
 
-
-</b-container>
-</div>  
+      <b-row class="mt-5">
+        <b-col> <skill-chart class="barCard mt-5"/></b-col>
+      </b-row>
+    </b-container>
+  </div>
 </template>
 <script>
 import SkillChart from "@/components/SkillChart.vue";
-import RadarChart from "@/components/PersonalSkill.vue"
-import HomeCard from "@/components/WelcomeCard.vue"
+import RadarChart from "@/components/PersonalSkill.vue";
+import HomeCard from "@/components/WelcomeCard.vue";
 export default {
   name: "Home",
-  data(){
-    return{
-    }
-  },
   components: {
-      SkillChart,
-      RadarChart,
-      HomeCard
-
-  }
+    SkillChart,
+    RadarChart,
+    HomeCard,
+  },
 };
 </script>
 <style lang="scss" scoped>
 /* Container holding the image and the text */
-.introCard:hover{
-    transform: scale(1.10);
+.introCard:hover {
+  transform: scale(1.1);
 }
-.radarCard{
+.radarCard {
   float: right;
   text-align: left;
 }
-.barCard{
+.barCard {
   text-align: left;
 }
-.radarCard:hover{
-  transform: scale(1.10);
+.radarCard:hover {
+  transform: scale(1.1);
 }
-.barCard:hover{
+.barCard:hover {
   transform: scale(1.05);
 }
 //Smaller screens (MOBILE)
 @media only screen and (max-width: 750px) {
-  .radarCard{
+  .radarCard {
     float: none;
     margin: auto;
     text-align: center;
   }
-  .barCard{
+  .barCard {
     text-align: center;
   }
-  .mobile-view{
-    margin-bottom: 1.5rem ;
+  .mobile-view {
+    margin-bottom: 1.5rem;
   }
 }
-
 </style>

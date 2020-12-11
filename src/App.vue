@@ -142,12 +142,12 @@ export default {
     min-width: 85%;
     max-width: 85%;
     min-height: 85vh;
-    margin-left: 3vw;
+    // margin-left: 3vw;
   }
 }
 .background-c {
   margin-top: 1rem;
-  margin-left: 5vw;
+  // margin-left: 5vw;
   position: sticky;
   bottom: -100vh;
 }

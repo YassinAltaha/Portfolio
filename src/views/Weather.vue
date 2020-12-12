@@ -127,20 +127,20 @@ export default {
     $_getAddressData: function(addressData) {
       this.address = addressData;
     },
-    $_toggleDegree() {
+    toggleDegree() {
       if (!this.feh) {
         this.tempUnite = "F";
-        this.temp = this.c2f(this.temp);
-        this.temp_min = this.c2f(this.temp_min);
-        this.temp_max = this.c2f(this.temp_max);
-        this.temp_feels = this.c2f(this.temp_feels);
+        this.temp = this.$_c2f(this.temp);
+        this.temp_min = this.$_c2f(this.temp_min);
+        this.temp_max = this.$_c2f(this.temp_max);
+        this.temp_feels = this.$_c2f(this.temp_feels);
         this.feh = true;
       } else if (this.feh) {
         this.tempUnite = "C";
-        this.temp = this.f2c(this.temp);
-        this.temp_min = this.f2c(this.temp_min);
-        this.temp_max = this.f2c(this.temp_max);
-        this.temp_feels = this.f2c(this.temp_feels);
+        this.temp = this.$_f2c(this.temp);
+        this.temp_min = this.$_f2c(this.temp_min);
+        this.temp_max = this.$_f2c(this.temp_max);
+        this.temp_feels = this.$_f2c(this.temp_feels);
         this.feh = false;
       }
     },
